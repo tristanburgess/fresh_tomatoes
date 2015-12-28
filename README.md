@@ -12,13 +12,12 @@ Fresh Tomatoes is an awesome website where you can view information about my fav
 
 ## Getting started
 
-Here's how to get started
+Here's how to get started:
 
-* [Download the latest release](https://github.com/tristanburgess/fresh_tomatoes/archive/master.zip).
-OR
-* Clone the repo: `git clone https://github.com/tristanburgess/fresh_tomatoes.git`.
-
-* Navigate to the directory where you have downloaded the repo, and untar if necessary
+* [Download the latest release](https://github.com/tristanburgess/fresh_tomatoes/archive/master.zip)
+#OR
+* Clone the repo: `git clone https://github.com/tristanburgess/fresh_tomatoes.git`
+* Navigate to the directory where you have downloaded the repo, and unzip if necessary
 * Run the program: `python entertainment_center.py`
 
 ## What's included
