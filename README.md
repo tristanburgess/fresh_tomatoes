@@ -14,8 +14,10 @@ Fresh Tomatoes is an awesome website where you can view information about my fav
 
 Here's how to get started
 
-* [Download the latest release](https://github.com/tristanburgess/udacity_fullstack_nanodegree/archive/master.zip).
-* Clone the repo: `git clone https://github.com/twbs/bootstrap.git`.
+* [Download the latest release](https://github.com/tristanburgess/fresh_tomatoes/archive/master.zip).
+OR
+* Clone the repo: `git clone https://github.com/tristanburgess/fresh_tomatoes.git`.
+
 * Navigate to the directory where you have downloaded the repo, and untar if necessary
 * Run the program: `python entertainment_center.py`
 
