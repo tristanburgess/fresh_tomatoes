@@ -89,7 +89,7 @@ main_page_head = '''
         });
     </script>
 </head>
-'''  # noqa
+'''
 
 
 # The main page layout and title bar
@@ -126,7 +126,7 @@ main_page_content = '''
     </div>
   </body>
 </html>
-'''  # noqa
+'''
 
 
 # A single movie entry html template
@@ -138,26 +138,24 @@ movie_tile_content = '''
     <h2>Actors </h2><p>{actors}</p>
     <h2>Genre </h2><p>{genre}</p>
 </div>
-'''  # noqa
+'''
 
 
 def create_movie_tiles_content(movies):
-    """Creates an HTML string that includes the actual
-       content from each movie object.
+    """Creates an HTML string that includes the actual content from each movie object.
 
     Args:
         movies: A list of movie objects.
 
     Returns:
-        A string of HTML using the appropriate div classes for tile display.
-        This string also contain content from the movie object inserted,
-        formatted, and ready for display.
+        A string of HTML using the appropriate div classes for tile display, as well as content from each movie
+        object inserted, formatted, and ready for display.
     """
 
     content = ''
 
     for movie in movies:
-
+        
         trailer_youtube_id = extract_youtube_id(movie.trailer_youtube_url)
 
         # Extract actor list into a comma separated string
@@ -174,8 +172,7 @@ def create_movie_tiles_content(movies):
 
     return content
 
-
-def extract_youtube_id(url):
+def extract_youtube_id(url): 
     """Parses out the Youtube video ID from the given URL.
 
     Args:
@@ -194,20 +191,17 @@ def extract_youtube_id(url):
 
     return trailer_youtube_id
 
-
 def open_movies_page(movies):
-    """Creates the HTML page file for Fresh Tomatoes and attempts to
-       load it through the OS default web browser.
+    """Creates the HTML page file for Fresh Tomatoes and attempts to load it through the OS default web browser.
 
     Args:
         movies: A list of movie objects.
     """
-
+    
     # Create or overwrite the output file
     output_file = open('fresh_tomatoes.html', 'w')
 
-    # Replace the movie tiles placeholder generated con
-    tent
+    # Replace the movie tiles placeholder generated content
     rendered_content = main_page_content.format(
         movie_tiles=create_movie_tiles_content(movies))
 
