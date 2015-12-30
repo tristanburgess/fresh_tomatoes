@@ -5,8 +5,6 @@ from movie import Movie
    to a list, and begins the creation of the HTML page using that data.
 """
 
-movies = []
-
 movie_monty_python = Movie('Monty Python and the Holy Grail', 'Terry Gilliam',
                                ['Graham Chapman', 'John Cleese', 'Eric Idle'],
                                'Adventure/Comedy',
@@ -45,8 +43,8 @@ movie_ameri_psycho = Movie('American Psycho', 'Mary Harron',
                            'http://www.joblo.com/posters/images/full/poster-american-psycho1.jpg',  # noqa
                            'https://www.youtube.com/watch?v=2GIsExb5jJU')
 
-movies.extend(movie_monty_python, movie_uhf, movie_hot_fuzz,
-              movie_pulp_fiction, movie_citizenfour, movie_ameri_psycho)
+movies = [movie_monty_python, movie_uhf, movie_hot_fuzz, movie_pulp_fiction,
+          movie_citizenfour, movie_ameri_psycho]
 
 if __name__ == "__main__":
     open_movies_page(movies)
